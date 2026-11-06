@@ -8,6 +8,7 @@ My learning journey in data engineering. I build small projects step by step and
 |------|-----|--------------|
 | 1 | 1 | CSV to SQLite pipeline with pandas (ETL) |
 | 1 | 2 | Same data as an ELT pipeline, cleaned with SQL |
+| 1 | 3 | API to SQLite pipeline with requests and pandas (ETL) |
 
 ## Day 1: Sales pipeline (ETL)
 
