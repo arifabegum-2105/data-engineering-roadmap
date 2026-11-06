@@ -20,11 +20,12 @@ My learning journey in data engineering. I build small projects step by step and
 - **Extract and Load:** loaded the raw data, duplicates included, into a `sales_raw` table.
 - **Transform:** created a `sales_clean` table with SQL (`SELECT DISTINCT`) inside the database. The raw table stays untouched, so I can change the cleaning rules without extracting again.
 
+## Day 3: Weather API pipeline (ETL)
 
-    cd week-01-python-etl/day-01-sales-pipeline
-    pip install pandas
-    python pipeline.py
-
+- **Extract:** requested hourly temperature data from the Open-Meteo API with `requests`, and used `raise_for_status()` so the script stops with a clear error if the request fails.
+- **Transform:** turned the JSON response into a pandas table (168 rows, one per hour for 7 days).
+- **Load:** wrote the table to SQLite with `if_exists="replace"`, so each run holds the latest forecast.
+    
 ## Tools
 
 Python, pandas, SQLite, SQL, Git, GitHub CLI
