@@ -36,4 +36,4 @@ My learning journey in data engineering. I build small projects step by step and
     
 ## Tools
 
-Python, pandas, SQLite, SQL, Git, GitHub CLI
+Python, pandas, SQLite, SQL, Git, GitHub CLI, requests 
